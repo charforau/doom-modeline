@@ -131,7 +131,7 @@ It returns a file name which can be used directly as argument of
 ;; Variables
 ;;
 
-(defvar doom-modeline-height 25
+(defvar doom-modeline-height 10
   "How tall the mode-line should be. It's only respected in GUI.
 If the actual char height is larger, it respects the actual char height.")
 
@@ -499,7 +499,7 @@ If the actual char height is larger, it respects the actual char height.")
 
 (defsubst doom-modeline--font-height ()
   "Calculate the actual char height of the mode-line."
-  (ceiling (* 1.68 (frame-char-height))))
+  (ceiling (* 1.0 (frame-char-height))))
 
 (defun doom-modeline-icon-octicon (&rest args)
   "Display octicon via ARGS."

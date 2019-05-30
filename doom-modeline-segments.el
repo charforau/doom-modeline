@@ -411,6 +411,12 @@ mouse-1: Previous buffer\nmouse-3: Next buffer"
         name
       (propertize name 'face 'mode-line-inactive))))
 
+(doom-modeline-def-segment padding-space
+  (propertize
+   " "
+   'face 'italic)
+  )
+
 (doom-modeline-def-segment buffer-info
   "Combined information about the current buffer, including the current working
 directory, the file name, and its state (modified, read-only or non-existent)."
